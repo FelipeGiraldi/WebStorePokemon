@@ -1,0 +1,124 @@
+﻿*{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	width: 100%;
+	background: rgba(251, 14, 18, .8);
+	height: 70px;
+	position: fixed;
+	z-index: 10;
+}
+h2{
+	font-size: 30px;
+	color: #fff;
+}
+
+.fondo{
+	background: orange;
+}
+.ancho{
+	width: 80%;
+	height: 70px;
+	/*background: red;*/
+	margin: auto;
+}
+.logo{
+	width: 30%;
+	height: 70px;
+	/*background: blue;*/
+	float: left;
+	box-sizing: border-box;
+	font-weight: bold;
+
+}
+
+.logo p a{
+	color: #fff;
+	font-size: 40px;
+	text-decoration: none;
+	font-family: pokemon1;
+
+
+}
+nav{
+	width: 70%;
+	height: 70px;
+	/*background: olive;*/
+	float: left;
+	text-align: right;
+	padding-top: 24px;
+	box-sizing: border-box;
+}
+nav ul li{
+	display: inline;
+}
+nav ul li a{
+	color: #fff;
+	font-size: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding-left: 15px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-family: pokemon1;
+
+}
+nav ul li a:hover{
+	color: #444;
+}
+
+@font-face{
+	font-family: pokemon1;
+	src: url(../fonts/Pokemon-Hollow.ttf);
+}
+@font-face{
+	font-family: raleway;
+	src: url(../fonts/Raleway-Italic-VariableFont_wght.ttf);
+}
+.form-registro{
+	width: 80%;
+	padding: 30px;
+	border-radius: 4px;
+	font-family: raleway;
+	color: white;
+}
+.form-control{
+	width: 100%;
+	background: #24303c;
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 16px;
+	border: 1px solid #1f53c5;
+	font-family: raleway;
+	font-size: 18px;
+}
+.form-registro p{
+	height: 40px;
+	text-align: center;
+	font-size: 18px;
+}
+.form-registro a{
+	color: white;
+	text-decoration: none;
+}
+.form-registro a:hover{
+	color:white;
+	text-decoration: underline;
+}
+.form-registro .botones{
+	width: 100%;
+	background: #1f53c5;
+	border: none;
+	padding: 12px;
+	color: white;
+	margin: 16px 0;
+	font-size: 16px;
+
+}
+
+
+
+
+

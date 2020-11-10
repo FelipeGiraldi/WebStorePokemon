@@ -1,0 +1,85 @@
+﻿h1, h2, h4, h5, h6 {
+	text-transform: uppercase;
+	color: #444;
+	font-family: raleway;
+	letter-spacing: 1px;
+}
+h2{
+	font-size: 25px;
+	color: #333;
+	padding-top: 20px;
+}
+h3{
+	font-family: raleway;
+	font-size: 18px;
+	padding-top: 20px;
+	font-weight: normal;
+	color: #555;
+}
+h4{
+	margin-top: 15px;
+	font-size: 20px;
+}
+h5{
+	font-size: 15px;
+	color: #666;
+}
+p{
+	color: #777;
+}
+.wap{
+	width: 90%;
+	margin: auto;
+}
+.Bienvenidos{
+	margin-top: 50px;
+	text-align: center;
+}
+.contenedor-columnas{
+	width: 100%;
+	margin: auto;
+}
+.columnasx3{
+	padding-top: 50px;
+	width: 33.333%;
+	float: left;
+	padding-top: 20px 20px;
+	box-sizing: border-box;
+	margin: auto;
+}
+.banner-1{
+	width: 100%
+	text-align: center;
+	box-sizing: border-box;
+	clear: both;
+	background: red;
+	padding-top: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+	transition: 0.4s;
+}
+.banner-1:hover{
+	background: #444;
+	transition: 0.4s;
+}
+.banner-1 h3{
+	color: #fff;
+	font-size: 30px;
+}
+.banner-1 a{
+	text-decoration: none;
+	margin-left: 20px;
+	font-weight: bold;
+	color: #fff;
+	border-bottom: 2px solid #fff;
+}
+.columnasx3{
+	padding-top: 50px;
+	width: 33.333%;
+	float: left;
+	padding-top: 20px 20px;
+	box-sizing: border-box;
+	margin: auto;
+
+}
