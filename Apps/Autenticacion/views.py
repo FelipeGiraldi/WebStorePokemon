@@ -17,7 +17,7 @@ def acceder(request):
             if usuario is not None:
                 login(request, usuario)
                 messages.success(request, F"Bienvenido de nuevo {nombre_usuario}")
-                return redirect("Web")
+                return redirect("index")
             else:
                 messages.error(request, "Los datos son incorrectos")
         else:

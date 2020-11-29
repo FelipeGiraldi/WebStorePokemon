@@ -14,14 +14,14 @@
     <!--MENU-->
     <div class="ancho">
         <div class="logo">
-            <p><a href="#">POKESTORE</a></p>
+            <p><a href="{% url 'index' %}">POKESTORE</a></p>
         </div>
         <nav>
             <ul>
                 <li><a href="{% url 'index' %}">Inicio</a></li>
-                <li><a href="#">Figuras</a></li>
-                <li><a href="#">Juegos</a></li>
-                <li><a href="#">Ropa</a></li>
+				<li><a href="#">Juegos</a></li>
+				<li><a href="#">Ropa</a></li>
+				<li><a href="{% url 'listadoProductos' %}">Ofertas</a></li>
             </ul>
         </nav>
         <br>

@@ -18,10 +18,10 @@
 		</div>
 		<nav>
 			<ul>
-				<li><a href="#">Figuras</a></li>
+				<li><a href="{% url 'listadoProductos' %}">Figuras</a></li>
 				<li><a href="#">Juegos</a></li>
 				<li><a href="#">Ropa</a></li>
-				<li><a href="pages/iniciar-sesion.html">Ofertas</a></li>
+				<li><a href="{% url 'listadoProductos' %}">Ofertas</a></li>
 			</ul>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
@@ -32,6 +32,19 @@
 		</nav>
 	</div>
 </header>
+<div>
+	{% if messages %}
+	<div class="row mt-5 mb-3">
+		<div class="col-12">
+			{%for message in messages%}
+			<div class="alert alert-{{message.tags}}">
+				{{message}}
+			</div>
+			{%endfor%}
+		</div>
+	</div>
+	{% endif %}{% block content %} {% endblock %}
+</div>
 <div class="ancho-letras">
 	<div class="letras-slider">
 		<h1 class="animate__animated animate__flipInY">Proximamente</h1>
@@ -49,7 +62,7 @@
 	</section>
 	<section class="contenedor-columnas">
 		<div class="columnasx3">
-			<img src="{% static 'img/figuras.jpg' %}" alt="">
+			<a href="{% url 'listadoProductos' %}"><img src="{% static 'img/figuras.jpg' %}" alt=""></a>
 			<h4>Figuras</h4>
 			<h5>Proximamente</h5>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit ipsum ullamcorper tellus efficitur maximus.</p>
@@ -71,23 +84,25 @@
 </section>
 
 <section class="banner-1">
-	<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<a href="#">Registrate para acceder a las mejores promociones</a></h3>
+	<h3>¿Estás buscando los mejores productos del mundo Pokemon? Entonces...<a href="{% url 'vistaRegistro' %}">Registrate para acceder a las mejores promociones</a></h3>
 
 </section class="wap">
 	<section class="contenedor-columnas">
 		<div class="columnasx3">
 			<h4>POKESTORE</h4>
+			<br>
 			<ul>
 				<li><a href="#">NUESTRA EMPRESA</a></li>
 				<li><a href="#">VENTA MAYORISTA</a></li>
-				<li><a href="#">CONTACTO</a></li>
+				<li><a href="{% url 'Web' %}">CONTACTO</a></li>
 			</ul>
 
 		</div>
 		<div class="columnasx3">
 			<h4>MI CUENTA</h4>
+			<br>
 			<ul>
-				<li><a href="#">INICIO</a></li>
+				<li><a href="{% url 'acceder' %}">INICIAR SESION</a></li>
 				<li><a href="#">MI CUENTA</a></li>
 				<li><a href="#">CARRITO</a></li>
 				<li><a href="#">TIENDA</a></li>
@@ -97,6 +112,7 @@
 		</div>
 		<div class="columnasx3">
 			<h4>SERVICIO AL CLIENTE</h4>
+			<br>
 			<ul>
 				<li><a href="#">SEGUIMIENTO DE COMPRA</a></li>
 				<li><a href="#">PREGUNTAS FRECUENTES</a></li>

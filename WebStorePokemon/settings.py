@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'Apps.Web',
     'Apps.Productos',
     'Apps.cart',
+    'Apps.Orden',
     'crispy_forms',
 ]
 
@@ -124,6 +125,11 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+EMAIL_HOST = 'smtp.mailtrap.io'
+EMAIL_HOST_USER = '9c94b24b02e977'
+EMAIL_HOST_PASSWORD = '1f86b6c1e959a7'
+EMAIL_PORT = '2525'
 
 
 # Static files (CSS, JavaScript, Images)
